@@ -1,0 +1,4 @@
+bin
+lib
+pyvenv.cfg
+src_files/__pycache__
