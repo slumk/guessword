@@ -21,9 +21,7 @@ All packages included in requirements.txt
 
 2-cd guessword
 
-3-pip install -r requirements.txt
-
-4-bash start-game.sh
+3-bash start-game.sh
 
 ```
 
