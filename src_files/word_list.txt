@@ -11,3 +11,15 @@ man
 woman
 restart
 pool
+bicycle
+giant
+water
+fire
+tree
+wood
+duck
+hen
+window
+door
+restart
+bike
