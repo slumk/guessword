@@ -1,6 +1,5 @@
 #this script imported as base_module in other scripts.
-#you are welcome to check for bugs and collaborate with me
-#if you spot a bug, please make this script good with your pull requests
+#you are welcome to check for bugs and report in github
 
 import base_module   #source code can be found in base_module.py
 
@@ -25,7 +24,7 @@ def accept_move(char):      #function for processing guesses
                 tried_chars.append(char)
                 return "notright"              #returning "notright" for false guesses
             else:
-                return "exnotright"            #returning "exnotright" for existing false moves 
+                return "exnotright"            #returning "exnotright" for exisisting false moves 
     else:
         return "NotAChar"       #if given input is a number or not a character entity returning "NotAChar"
 
