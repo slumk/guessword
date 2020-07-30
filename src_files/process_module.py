@@ -16,8 +16,7 @@ def accept_move(char):      #function for processing guesses
         if char in base_module.lucky_word:
             indices=[index for index,item in enumerate(base_module.lucky_word) if item == char]
             for ind in indices:
-                obf_word[ind]=char
-            #obf_word[base_module.lucky_word.index(char)]=char   #replaces obfuscated word positions.
+                obf_word[ind]=char                             #replaces obfuscated word positions.
             return obf_word                                     #returning replaced obfuscated word
         else:
             if char not in tried_chars:
