@@ -33,7 +33,7 @@ while('_' in process_module.obf_word and rem_moves!=0):
     else:
         print("\nYou Missed A Guess...")
     if process_module.tried_chars != []:
-        print("You Have Tried [",*process_module.tried_chars,"]")  #printing tried chars without list structure
+        print("\nYou Have Tried [",*process_module.tried_chars,"]")  #printing tried chars without list structure
 
 if '_' in process_module.obf_word and rem_moves==0:
     os.system('clear')
@@ -41,7 +41,7 @@ if '_' in process_module.obf_word and rem_moves==0:
     print("\nRestart Game Again..")
     os.system('exit')
 else:
-    os.system('clear')
+    os.system('clear')  #clearing terminal screen
     print("\nCONGRATS!!!You Won The Game...")
     print("\nIf You Liked This Game...Please Gimme A Star And Also Try To Give Feedbacks,That's How We All Improve")
     os.system('exit')            #exiting terminal
