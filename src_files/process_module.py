@@ -11,11 +11,14 @@ tried_chars=[]                #list for storing tried guesses
 def accept_move(char):      #function for processing guesses
     if len(char) > 1:
         return "exceed"      #returns 'exceed' for words(characters are supposed to input)
-    if char is None:
-        return None
+    if char is '':
+        return None         #returns None for empty inputs
     if char.lower() in chars:
         if char in base_module.lucky_word:
-            obf_word[base_module.lucky_word.index(char)]=char   #replaces obfuscated word positions.
+            indices=[index for index,item in enumerate(base_module.lucky_word) if item == char]
+            for ind in indices:
+                obf_word[ind]=char
+            #obf_word[base_module.lucky_word.index(char)]=char   #replaces obfuscated word positions.
             return obf_word                                     #returning replaced obfuscated word
         else:
             if char not in tried_chars:
